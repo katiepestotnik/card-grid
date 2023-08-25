@@ -1,0 +1,37 @@
+.container {
+    border: 1px solid red;
+    display: grid;
+    grid-template-areas: 
+    "left left right right right"
+    ;
+    height: 250px;
+    width: 500px;
+    margin: 100px auto;
+}
+
+.left-box {
+    grid-area: left;
+    border: 1px solid black;
+    display: grid;
+    grid-template-areas: 
+    'top top top top'
+    'top top top top'
+    'licon licon ricon ricon';
+}
+.right-box {
+    grid-area: right;
+    border: 1px solid green
+}
+
+.img {
+    grid-area: top;
+    border: 1px solid grey;
+}
+.left-icon {
+    grid-area: licon;
+    border: 1px solid blue;
+}
+.right-icon {
+    grid-area: ricon;
+    border: 1px solid pink;
+}
